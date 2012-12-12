@@ -5,8 +5,9 @@ Note that it still has a lot of ExpressJS boilerplate hanging out in it. Definit
 
 #Install
 Git clone the repository and from the command line...
-`npm install`
-`node app`
+
+    npm install
+    node app
 
 On first run, the app will go to xkcd.com, fetch the latest comic, and then iterate backwards to the first comic to generate the cache of comics located in `comics.json`. Subsequent runs (and also every 3 days), the app will refresh this cache by fetching the latest comic and walking backwards until it reaches a comic we already know about.
 
